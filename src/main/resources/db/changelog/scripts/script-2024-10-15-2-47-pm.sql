@@ -79,7 +79,8 @@ CREATE TABLE IF NOT EXISTS classqr.qr (
 
 -- Crear tabla asistencia
 CREATE TABLE asistencia (
-                            codigo_asistencia varchar(10) PRIMARY KEY,
+                            id_asistencia SERIAL PRIMARY KEY,
+                            codigo_asistencia varchar(10) ,
                             codigo_estudiante_fk varchar(10) ,
                             codigo_profesor_fk varchar(10) ,
                             codigo_curso_fk varchar(10) ,
